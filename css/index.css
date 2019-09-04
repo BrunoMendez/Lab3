@@ -1,0 +1,112 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.logo > img {
+  width: 50px;
+}
+
+.navbar {
+  background-color: rgb(88, 88, 88);
+  overflow: hidden;
+}
+
+.product {
+  border: 1px solid rgba(0, 0, 0, 0.185);
+  border-radius: 5px;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  padding: 10px;
+}
+
+main {
+  border-bottom: 1px solid  rgba(0, 0, 0, 0.185);
+}
+
+.social {
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+}
+.social_icon {
+  list-style: none;
+  flex: 1;
+  text-align: center;
+}
+
+@media (min-width: 1025px) {
+  header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .logo {
+    display: flex;
+    justify-content: center;
+    width:45%;
+  }
+  .hamburger {
+    display: none;
+  }
+  .menu  > li {
+    float: right;
+    list-style: none;
+    padding-left: 25px;
+    padding-right: 20px;
+    padding-bottom: 15px;
+    color: white;
+  }
+  main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+  }
+}
+
+@media (min-width: 320px)  and (max-width: 640px) {
+  .hamburger {
+    float: right;
+    color: white;
+    margin: 5px;
+  }
+  .menu {
+    display: none;
+  }
+  header {
+    text-align: center;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  .hamburger {
+    float: right;
+    color: white;
+    margin: 5px;
+  }
+  .menu {
+    display: none;
+  }
+  header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .logo {
+    display: flex;
+    justify-content: center;
+    width:40%;
+  }
+}
